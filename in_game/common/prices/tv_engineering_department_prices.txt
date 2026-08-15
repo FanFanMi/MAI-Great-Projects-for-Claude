@@ -1,0 +1,44 @@
+﻿tv_wonder_labor_camp_price = {
+	gold = 80
+}
+
+tv_wonder_material_dispatch_point_price = {
+	gold = 200
+}
+
+tv_wonder_ritual_style_3_scaled_gold_price = {
+	scaled_gold = 5.0
+}
+
+tv_wonder_ritual_style_3_prestige_price = {
+	prestige = 50
+}
+
+tv_wonder_ritual_annex_small_price = {
+	gold = 500
+}
+
+tv_wonder_ritual_annex_medium_price = {
+	gold = 800
+}
+
+tv_wonder_ritual_annex_large_price = {
+	gold = 1200
+}
+
+# Base gold matches each size's CMM slider default. The actual paid price tracks
+# the CMM slider at runtime via tv_wonder_direct_build_<size>_price_cost_modifier
+# in auto_modifiers/tv_engineering_department_cmm_auto_modifiers.txt — common/prices
+# gold values are resolved as static named values and cannot reference global_var
+# directly (confirmed: "Matching scriptvalue [...], but of wrong type" engine error).
+tv_wonder_direct_build_small_price = {
+	gold = 10000
+}
+
+tv_wonder_direct_build_medium_price = {
+	gold = 20000
+}
+
+tv_wonder_direct_build_large_price = {
+	gold = 30000
+}

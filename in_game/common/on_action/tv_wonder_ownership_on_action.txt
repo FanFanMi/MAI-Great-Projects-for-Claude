@@ -1,0 +1,15 @@
+﻿# Towards Victory - Wonder ownership transfer hooks
+
+# root = changed location; scope:winner = new owner; scope:loser = previous owner.
+# Fires only when the changed location has completed TV wonder state.
+tv_wonder_ownership_location_changed_owner = {
+	trigger = {
+		has_variable_map = tv_wonder_final_building_level_by_type
+	}
+	effect = {
+		hidden_effect = {
+			tv_wonder_ownership_handle_location_owner_changed_effect = yes
+			tv_wonder_mechanics_refresh_location_display_state_effect = yes
+		}
+	}
+}
